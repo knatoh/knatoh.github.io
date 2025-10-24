@@ -1,5 +1,5 @@
 ...
-Title: "Introduction to web Vulnerabilities"
+Title: Introduction to web Vulnerabilities
 date: 2025-10-24
 categories: [cybersecurity, web]
 tags: [xss,sql-injection,csrf]
