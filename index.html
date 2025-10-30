@@ -3,116 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kelvin Nato | SOC Analyst Portfolio</title>
+  <title>Kelvin Nato — SOC Analyst Portfolio</title>
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
       background-color: #0b0c10;
       color: #c5c6c7;
-      line-height: 1.6;
-    }
-    header {
-      background: #1f2833;
-      color: #66fcf1;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
       margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #c5c6c7;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #66fcf1;
-      border-bottom: 2px solid #45a29e;
-      padding-bottom: 0.3rem;
-    }
-    ul {
-      list-style: none;
       padding: 0;
     }
-    li {
-      margin-bottom: 0.8rem;
+    header {
+      background-color: #1f2833;
+      text-align: center;
+      padding: 50px 20px;
     }
-    a {
-      color: #45a29e;
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      border: 3px solid #66fcf1;
+    }
+    h1 {
+      color: #66fcf1;
+    }
+    nav {
+      background-color: #0b0c10;
+      text-align: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #66fcf1;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
+    }
+    section {
+      padding: 40px 80px;
+    }
+    h2 {
+      color: #45a29e;
+      border-bottom: 2px solid #45a29e;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .project, .lab {
+      background: #1f2833;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
     footer {
       background: #1f2833;
-      color: #c5c6c7;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 20px;
+      color: #66fcf1;
+    }
+    a.link {
+      color: #66fcf1;
     }
   </style>
 </head>
 <body>
-  <header>
+
+  <header id="home">
+    <img src="assets/profile.jpg" alt="Kelvin Nato Photo" />
     <h1>Kelvin Nato — SOC Analyst</h1>
     <p>Cybersecurity Enthusiast | Blue Team | Incident Response | Threat Detection</p>
   </header>
 
-  <section>
-    <h2>👨‍💻 About Me</h2>
-    <p>
-      I’m a passionate <strong>Security Operations Center (SOC) Analyst</strong> focused on 
-      threat detection, SIEM analysis, and incident response. 
-      I enjoy working with tools like <strong>Splunk, Wireshark, and TryHackMe</strong> to identify and mitigate security threats.
-    </p>
-  </section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#labs">Lab Challenges</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section>
-    <h2>🚀 Projects</h2>
-    <ul>
-      <li><strong><a href="https://github.com/knato/ir-playbook">Incident Response Playbook</a></strong> — Step-by-step IR guide for SOC teams.</li>
-      <li><strong><a href="https://github.com/knato/log-analysis">Log Analysis Scripts</a></strong> — Custom Python tools for SIEM log analysis.</li>
-      <li><strong><a href="https://github.com/knato/threat-hunting">Threat Hunting Lab</a></strong> — Blue team simulation for threat detection and triage.</li>
-    </ul>
-  </section>
+  <section id="resume">
+    <h2>📜 Resume</h2>
+    <h3>🎓 Academic Background</h3>
+    <p>Bachelor of Science in Computer Science — University of the People</p>
 
-  <section>
-    <h2>🎓 Certifications & Learning</h2>
+    <h3>💼 Work Experience</h3>
+    <p>Security Operations Analyst (Intern) — Hands-on experience in SIEM monitoring, log analysis, and alert triage.</p>
+
+    <h3>🏅 Certifications</h3>
     <ul>
-      <li>Google Cybersecurity Professional Certificate (Coursera)</li>
+      <li>Google Cybersecurity Professional Certificate</li>
       <li>TryHackMe: SOC Level 1, Blue Team Fundamentals</li>
       <li>CompTIA Security+ (In Progress)</li>
     </ul>
+
+    <h3>🧰 Technical Skills</h3>
+    <p>SIEM (Splunk, ELK), Wireshark, Python, Incident Response, Threat Hunting, MITRE ATT&CK Framework</p>
   </section>
 
-  <section>
-    <h2>🧰 Tools & Platforms</h2>
-    <ul>
-      <li>TryHackMe, Hack The Box, Blue Team Labs Online</li>
-      <li>Splunk, Wireshark, VMware, VirtualBox</li>
-      <li>Python scripts for automation & log analysis</li>
-    </ul>
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+
+    <div class="project">
+      <h3>Incident Response Playbook</h3>
+      <p>Developed a step-by-step guide for SOC teams to handle incidents effectively.</p>
+    </div>
+
+    <div class="project">
+      <h3>Log Analysis with Python</h3>
+      <p>Created Python scripts to automate log parsing and identify suspicious IPs from system logs.</p>
+    </div>
+
+    <div class="project">
+      <h3>Threat Hunting Lab</h3>
+      <p>Simulated a cyber-attack environment to detect malicious traffic and correlate events using Splunk.</p>
+    </div>
   </section>
 
-  <section>
-    <h2>🔗 Connect With Me</h2>
-    <ul>
-      <li>💼 <a href="https://linkedin.com/in/kelvinnato">LinkedIn</a></li>
-      <li>🌐 <a href="https://knato.github.io">Portfolio Website</a></li>
-      <li>🐙 <a href="https://github.com/knato">GitHub</a></li>
-      <li>✉️ <a href="mailto:kelvinnato3@gmail.com">kelvinnato@gmail.com</a></li>
-    </ul>
+  <section id="labs">
+    <h2>🧠 Lab Challenges</h2>
+
+    <div class="lab">
+      <h3>TryHackMe: Blue Team Fundamentals</h3>
+      <p><strong>Problem:</strong> Detect suspicious PowerShell activity in logs.</p>
+      <p><strong>Approach:</strong> Used Splunk queries and Windows Event IDs.</p>
+      <p><strong>Tools:</strong> Splunk, Sysmon, Wireshark</p>
+      <p><strong>Lessons:</strong> Improved detection of command-line abuse and event correlation.</p>
+    </div>
+
+    <div class="lab">
+      <h3>Wireshark Traffic Analysis</h3>
+      <p><strong>Problem:</strong> Investigate malicious HTTP traffic from captured pcap.</p>
+      <p><strong>Approach:</strong> Used Wireshark filters to trace attacker IPs and payloads.</p>
+      <p><strong>Tools:</strong> Wireshark, CyberChef</p>
+      <p><strong>Lessons:</strong> Strengthened packet analysis and forensic investigation skills.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📞 Contact</h2>
+    <p>Email: <a class="link" href="mailto:kelvinnato@gmail.com">kelvinnato@gmail.com</a></p>
+    <p>GitHub: <a class="link" href="https://github.com/knato" target="_blank">github.com/knato</a></p>
+    <p>LinkedIn: <a class="link" href="https://linkedin.com/in/knato" target="_blank">linkedin.com/in/knato</a></p>
   </section>
 
   <footer>
-    <p><em>"Cybersecurity is not a product, but a process." — Bruce Schneier</em></p>
+    <p>© 2025 Kelvin Nato | SOC Analyst Portfolio</p>
   </footer>
+
 </body>
 </html>
